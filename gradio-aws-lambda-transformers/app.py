@@ -27,4 +27,4 @@ with gr.Blocks() as gradio_app:
     classify_button.click(fn=sentiment, inputs=text_input, outputs=output_label)
 
 # Run the app
-gradio_app.launch(share=True)
+gradio_app.launch()
