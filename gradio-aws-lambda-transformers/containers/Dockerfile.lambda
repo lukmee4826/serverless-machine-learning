@@ -7,6 +7,6 @@ WORKDIR /var/task
 COPY requirements/requirements.txt  ./requirements.txt
 RUN python -m pip install -r requirements.txt
 
-COPY app.py  ./
-COPY model/  ./model/
+COPY ./app.py  ./
+COPY ./model/  ./model/
 CMD ["python3", "app.py"]
